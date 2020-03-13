@@ -11,7 +11,7 @@ terraform version
 
 
 ```
-.tf files , public.     tf_vars must contain the entry information:
+tf_vars must contain the entry information:
 ```
 
 ## Create file ~/aws_creds.txt :
@@ -36,7 +36,6 @@ source ~/aws_creds.txt
 ```
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
-sudo ./aws/install
 ./aws/install --bin-dir /usr/local/bin --install-dir /usr/local/aws-cli --update
 aws --version
 
