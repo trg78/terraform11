@@ -1,9 +1,18 @@
-# terraform11
+# Install terraform11
+
+
+```
+curl https://releases.hashicorp.com/terraform/0.11.14/terraform_0.11.14_linux_amd64.zip -o "terraform.zip"
+unzip terraform.zip
+cp terraform /usr/local/bin/terraform
+chmod u+x /usr/local/bin/terraform
+terraform version
+```
+
 
 ```
 .tf files , public.     tf_vars must contain the entry information:
 ```
-
 
 ## Create file ~/aws_creds.txt :
 
@@ -20,7 +29,6 @@ export TF_VAR_ami=ami-05c1fa8df71875112  - available ami from your region
 ```
 source ~/aws_creds.txt
 ```
-
 
 
 ## Install AWS CLI version 2 locally :
