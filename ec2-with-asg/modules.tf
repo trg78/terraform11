@@ -4,7 +4,7 @@ resource "aws_key_pair" "deployer" {
 }
 
 data "template_file" "user_data" {
-  template = "${file("user_data.sh")}"
+  template = "${file("templates/user_data.sh")}"
 
   vars {
     package_to_install = "nginx"
