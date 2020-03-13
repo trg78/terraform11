@@ -6,5 +6,9 @@ provider "aws" {
 }
 
 terraform {
-  backend "s3" {}
+  backend "s3" {
+    bucket = "terraform-s3-2020"
+    key    = "ec2withasg/tf.state"
+    region = "us-east-2"
+  }
 }

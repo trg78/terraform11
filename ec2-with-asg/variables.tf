@@ -10,6 +10,10 @@ variable "aws_region" {
 
 variable "VPCId" {}
 
+variable "bucket" {}
+variable "key" {}
+variable "region" {}
+
 variable "subnet_ids" {
   type = "list"
 }

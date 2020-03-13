@@ -29,7 +29,7 @@ resource "aws_security_group" "asg-sg" {
 }
 
 module "ecs-instances" {
-  source = "..\/..\/asg_module"
+  source = "asg_module"
   environment = "dev"
   name = "tar2020-ASG"
   aws_ami = "${var.ami_id}"
